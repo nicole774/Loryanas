@@ -32,6 +32,7 @@ class AdminController extends Controller
     public function article(){
         return view('admin.article');
     }
+
     public function add_category(Request $request){
         $category = new Category;
         $category->category_name= $request->category;
