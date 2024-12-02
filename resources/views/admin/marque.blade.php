@@ -2,7 +2,7 @@
 
 
 
-@section('title', 'CATEGORY- LORYANA')
+@section('title', 'MARQUE- LORYANA')
 
 
 
@@ -42,13 +42,13 @@
         }
     </style>
     <div>
-        <h1 style="color:black">Add Category</h1>
+        <h1 style="color:black">Ajouter une Marque</h1>
         <div class="div_deg">
-            <form action="{{route('add_category')}}" method="post">
+            <form action="{{route('add_marque')}}" method="post">
                 @csrf
                 <div>
-                    <input type="text" name="category">
-                    <input class="btn btn-primary" type="submit" value="Add Category">
+                    <input type="text" name="marque">
+                    <input class="btn btn-primary" type="submit" value="Add Marque">
                 </div>
             </form>
 
@@ -56,18 +56,18 @@
         <div>
             <table class="table_deg">
                 <tr>
-                    <th>Category name</th>
+                    <th>Marque name</th>
                     <th>Edit</th>
                     <th>Delete</th>
                 </tr>
                 @foreach($data as $data)
                 <tr>
-                    <td style="color: black">{{$data->category_name}}</td>
+                    <td style="color: black">{{$data->marque_name}}</td>
                     <td>
-                        <a class='btn btn-success' href="{{route('edit_category',$data->id)}}">Edit</a>
+                        <a class='btn btn-success' href="{{route('edit_marque',$data->id)}}">Edit</a>
                     </td>
                     <td>
-                        <a class="btn btn-danger" onclick="confirmation(event)" href="{{route('delete_category',$data->id)}}">Delete</a>
+                        <a class="btn btn-danger" onclick="confirmation(event)" href="{{route('delete_marque',$data->id)}}">Delete</a>
                     </td>
                 </tr>
                 @endforeach

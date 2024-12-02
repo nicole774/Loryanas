@@ -62,6 +62,8 @@
                             </li>
                             <li><a href="{{ route('contact') }}">Contact</a></li>
                             <li><a href="{{ route('apropos') }}">A propos</a></li>
+                            <li><a href="{{url('/login')}}">Login</a></li>
+                            <li><a href="{{url('/register')}}">Register</a></li>
 
                         </ul>
                     </div>
@@ -79,12 +81,6 @@
                     </form>
                 </div>
                 <!-- User Login Info -->
-                <div class="user-login-info">
-                    <a href="{{url('/login')}}"><span class="login">Login</span></a>
-                </div>
-                <div class="user-login-info">
-                    <a href="{{url('/register')}}"><span class="register">Register</span></a>
-                </div>
                 <!-- Cart Area -->
                 <div class="cart-area">
                     <a href="#" id="essenceCartBtn"><img src="img/core-img/bag.svg" alt="">

@@ -223,6 +223,30 @@
         </div>
     </section>
     <!-- ##### New Arrivals Area End ##### -->
+    <div class="brands-area d-flex align-items-center justify-content-between">
+        <!-- Brand Logo -->
+        <div class="single-brands-logo">
+            <img src="img/core-img/brand1.png" alt="">
+        </div>
+        <!-- Brand Logo -->
+        <div class="single-brands-logo">
+            <img src="img/core-img/brand2.png" alt="">
+        </div>
+        <!-- Brand Logo -->
+        <div class="single-brands-logo">
+            <img src="img/core-img/brand3.png" alt="">
+        </div>
+
+        <!-- Brand Logo -->
+        <div class="single-brands-logo">
+            <h1 style="color: black">BLACK</h1>
+        </div>
+        <!-- Brand Logo -->
+        <div class="single-brands-logo">
+            <img src="img/core-img/brand6.png" alt="">
+        </div>
+    </div>
+
 
 
 @endsection
